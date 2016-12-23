@@ -1,0 +1,28 @@
+.begin Global  ---------------------------------------
+
+%input%
+
+ActiveProcessors MyHiggsRecoil
+MaxRecordNumber  -1
+
+.end   -----------------------------------------------
+
+.begin MyHiggsRecoil
+ProcessorType HiggsRecoil
+
+#       The name of the PFOs
+#        type:  [string]
+#        default: MCParticle
+        MCObjects   MCParticle
+
+    OverwriteFile   0
+
+    TreeName   MCPart
+
+#    LeptonIDTag 11
+
+    TreeOutputFile    %output%
+.end -------------------------------------------------
+
+
+

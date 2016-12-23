@@ -1,0 +1,6 @@
+source /afs/ihep.ac.cn/users/c/cuizw/init_ilcsoft_151125.sh
+. /besfs/groups/higgs/users/cuizw/zexhuuall/zjjhuu/loadLDD.sh
+
+cd %path%
+ 
+Marlin %name%.steer
